@@ -7,8 +7,6 @@ SetWorkingDir %A_ScriptDir%
 ; Set a default Status
 CurrentStatus = Unknown
 
-; Display a notification every 5 mins
-;SetTimer, ShowNotification, 300000
 logPath = %A_AppData%\Microsoft\Teams\logs.txt
 lt := new CLogTailer(logPath, Func("NewLine"))
 return
